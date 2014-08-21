@@ -17,12 +17,42 @@
     };
   };
 
+  var EventPriority = function() {
+    var _priorities = {
+      low: -1,
+      normal: 0,
+      high: 9999999
+    };
+
+    this.formatPriority = function FormatPriority(priority) {
+      if (typeof priority == 'undefined' || priority === null) {
+        priority = 'normal';
+      }
+
+      if (typeof priority == 'string') {
+        if (!(priority in _priorities)) {
+          priority = 'normal';
+        }
+        priority = _priorities[priority];
+      }
+
+      return priority;
+    };
+
+    this.sortByPriority = function SortByPriority(list) {
+      list.sort(function(a, b) {
+        return b.priority - a.priority;
+      });
+    };
+
+  };
+
   window.EventsManager = function() {
 
     var _this = this,
         _events = [],
         _eventsAnything = [],
-        _priority = new AbstractPriority(),
+        _priority = new EventPriority(),
         _locks = {};
 
     function _formatEventNames(eventName) {
