@@ -1,5 +1,3 @@
-our, we, memory
-
 # Contributing to events-manager project
 
 I'd love for you to contribute to our source code and to make this project even better and fun than it is
