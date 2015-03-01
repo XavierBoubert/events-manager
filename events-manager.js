@@ -86,6 +86,17 @@
 
     var eventInstance = new EventInstance();
 
+    this.eventsName = function() {
+      var names = [],
+          name = null;
+
+      for(name in _events) {
+        names.push(name);
+      }
+
+      return names;
+    };
+
     this.eventsStack = function(eventName) {
       return (_events[eventName] || []).concat(_eventsAnything);
     };
