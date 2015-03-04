@@ -1,6 +1,10 @@
 (function() {
   'use strict';
 
+  if(window.EventsManager) {
+    return;
+  }
+
   var EventInstance = function() {
     var _isStoppedPropagation = false;
 

@@ -30,3 +30,13 @@ Changelog
 
 - **Core**
   - Add eventsName() method
+
+<a name="1.0.2"></a>
+# 1.0.2 (2015-03-04)
+
+[Release 1.0.2](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.2) - [Branch release/1.0.1](https://github.com/XavierBoubert/events-manager/tree/1.0.2)
+
+## Breeaking changes
+
+- **Core**
+  - Add possibility to include the file many times without break events
