@@ -1,7 +1,7 @@
 {
   "name": "events-manager",
-  "main": "events-manager.js",
-  "version": "1.0.2",
+  "main": "events-manager.min.js",
+  "version": "1.0.3",
   "homepage": "https://github.com/XavierBoubert/events-manager",
   "authors": [
     "Xavier Boubert <xavier@boubert.fr>"
