@@ -1,0 +1,28 @@
+{
+  "name": "events-manager",
+  "main": "events-manager.js",
+  "version": "1.0.2",
+  "homepage": "https://github.com/XavierBoubert/events-manager",
+  "authors": [
+    "Xavier Boubert <xavier@boubert.fr>"
+  ],
+  "description": "JavaScript class inherit to add an events management",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "events",
+    "manager",
+    "on",
+    "fire",
+    "namespace"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
