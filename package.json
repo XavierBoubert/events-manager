@@ -1,7 +1,9 @@
 {
   "name": "events-manager",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JavaScript class inherit to add an events management",
+  "homepage": "https://github.com/XavierBoubert/events-manager",
+  "author": "Xavier Boubert <xavier@boubert.fr>",
   "main": "events-manager.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,10 +19,8 @@
     "fire",
     "namespace"
   ],
-  "author": "Xavier Boubert <xavier@boubert.fr>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/XavierBoubert/events-manager/issues"
-  },
-  "homepage": "https://github.com/XavierBoubert/events-manager"
+  }
 }

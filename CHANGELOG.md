@@ -40,3 +40,23 @@ Changelog
 
 - **Core**
   - Add possibility to include the file many times without break events
+
+<a name="1.0.3"></a>
+# 1.0.3 (2015-03-04)
+
+[Release 1.0.3](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.3) - [Branch release/1.0.3](https://github.com/XavierBoubert/events-manager/tree/1.0.3)
+
+## Breeaking changes
+
+- **Core**
+  - Add Bower support
+
+<a name="1.0.4"></a>
+# 1.0.4 (2015-03-04)
+
+[Release 1.0.4](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.4) - [Branch release/1.0.4](https://github.com/XavierBoubert/events-manager/tree/1.0.4)
+
+## Breeaking changes
+
+- **Core**
+  - Add NodeJs support

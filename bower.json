@@ -1,12 +1,12 @@
 {
   "name": "events-manager",
-  "main": "events-manager.min.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "description": "JavaScript class inherit to add an events management",
   "homepage": "https://github.com/XavierBoubert/events-manager",
   "authors": [
     "Xavier Boubert <xavier@boubert.fr>"
   ],
-  "description": "JavaScript class inherit to add an events management",
+  "main": "events-manager.min.js",
   "moduleType": [
     "globals"
   ],

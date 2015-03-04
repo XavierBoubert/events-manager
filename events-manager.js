@@ -1,7 +1,7 @@
-(function() {
+(function(exports) {
   'use strict';
 
-  if(window.EventsManager) {
+  if(exports.EventsManager) {
     return;
   }
 
@@ -51,7 +51,7 @@
 
   };
 
-  window.EventsManager = function() {
+  exports.EventsManager = function() {
 
     var _this = this,
         _events = [],
@@ -260,4 +260,4 @@
 
   };
 
-})();
+})(typeof exports == 'undefined'? this : exports);
