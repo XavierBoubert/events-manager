@@ -184,7 +184,7 @@
       return _this;
     };
 
-    this.removeEventsNamespace = function(namespace) {
+    this.offNamespace = function(namespace) {
       var name;
 
       for (name in _events) {
@@ -218,7 +218,7 @@
       return _this;
     };
 
-    this.removeEvent = function(eventName, eventFunc) {
+    this.off = function(eventName, eventFunc) {
       _checkLock(eventName);
 
       _formatEventNames(eventName).map(function(name) {
@@ -253,7 +253,7 @@
       return _this;
     };
 
-    this.removeEvents = function() {
+    this.offAll = function() {
       _events = [];
       _eventsAnything = [];
     };
