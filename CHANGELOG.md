@@ -11,52 +11,73 @@ Versions details history. For each version you can find:
 Changelog
 ---------
 
-<a name="1.0.0"></a>
-# 1.0.0 (2014-08-21)
+<a name="1.1.0"></a>
+# 1.1.0 (2015-09-29)
 
-[Release 1.0.0](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.0) - [Branch release/1.0.0](https://github.com/XavierBoubert/events-manager/tree/1.0.0)
+[Release 1.1.0](https://github.com/XavierBoubert/events-manager/releases/tag/1.1.0) -
+[Branch release/1.1.0](https://github.com/XavierBoubert/events-manager/tree/1.1.0)
 
-## Breeaking changes
-
-- **Core**
-  - Creation of the base file
-
-<a name="1.0.1"></a>
-# 1.0.1 (2015-03-01)
-
-[Release 1.0.1](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.1) - [Branch release/1.0.1](https://github.com/XavierBoubert/events-manager/tree/1.0.1)
-
-## Breeaking changes
+## Breaking changes
 
 - **Core**
-  - Add eventsName() method
+  - Rename "remove events" methods with "off" naming
+  - Support async calls with the new onAsync() method
+  - Split events with space instead of coma
 
-<a name="1.0.2"></a>
-# 1.0.2 (2015-03-04)
-
-[Release 1.0.2](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.2) - [Branch release/1.0.1](https://github.com/XavierBoubert/events-manager/tree/1.0.2)
-
-## Breeaking changes
-
-- **Core**
-  - Add possibility to include the file many times without break events
-
-<a name="1.0.3"></a>
-# 1.0.3 (2015-03-04)
-
-[Release 1.0.3](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.3) - [Branch release/1.0.3](https://github.com/XavierBoubert/events-manager/tree/1.0.3)
-
-## Breeaking changes
-
-- **Core**
-  - Add Bower support
+- **Chore**
+  - Add gulp builder task for .min files
 
 <a name="1.0.4"></a>
 # 1.0.4 (2015-03-04)
 
-[Release 1.0.4](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.4) - [Branch release/1.0.4](https://github.com/XavierBoubert/events-manager/tree/1.0.4)
+[Release 1.0.4](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.4) -
+[Branch release/1.0.4](https://github.com/XavierBoubert/events-manager/tree/1.0.4)
 
-## Breeaking changes
+## Breaking changes
 
 - **Core**
   - Add NodeJs support
+
+<a name="1.0.3"></a>
+# 1.0.3 (2015-03-04)
+
+[Release 1.0.3](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.3) -
+[Branch release/1.0.3](https://github.com/XavierBoubert/events-manager/tree/1.0.3)
+
+## Breaking changes
+
+- **Core**
+  - Add Bower support
+
+<a name="1.0.2"></a>
+# 1.0.2 (2015-03-04)
+
+[Release 1.0.2](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.2) -
+[Branch release/1.0.1](https://github.com/XavierBoubert/events-manager/tree/1.0.2)
+
+## Breaking changes
+
+- **Core**
+  - Add possibility to include the file many times without break events
+
+<a name="1.0.1"></a>
+# 1.0.1 (2015-03-01)
+
+[Release 1.0.1](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.1) -
+[Branch release/1.0.1](https://github.com/XavierBoubert/events-manager/tree/1.0.1)
+
+## Breaking changes
+
+- **Core**
+  - Add eventsName() method
+
+<a name="1.0.0"></a>
+# 1.0.0 (2014-08-21)
+
+[Release 1.0.0](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.0) -
+[Branch release/1.0.0](https://github.com/XavierBoubert/events-manager/tree/1.0.0)
+
+## Breaking changes
+
+- **Core**
+  - Creation of the base file
