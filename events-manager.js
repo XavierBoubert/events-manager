@@ -63,9 +63,15 @@
         _locks = {};
 
     function _formatEventNames(eventName) {
-      return eventName.split(',').map(function(name) {
-        return name.trim();
+      var events = [];
+
+      eventName.split(' ').map(function(name) {
+        if (name) {
+          events.push(name);
+        }
       });
+
+      return events;
     }
 
     function _namespace(eventName) {
