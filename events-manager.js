@@ -169,6 +169,7 @@
 
     this.onSafe = function(eventName, eventFunc, priority) {
       _this.removeEvent(eventName, eventFunc);
+
       return _this.on(eventName, eventFunc, priority);
     };
 
@@ -260,4 +261,4 @@
 
   };
 
-})(typeof exports == 'undefined'? this : exports);
+})(typeof exports == 'undefined' ? this : exports);
