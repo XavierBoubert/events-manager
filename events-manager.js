@@ -1,7 +1,7 @@
 (function(exports) {
   'use strict';
 
-  if(exports.EventsManager) {
+  if (exports.EventsManager) {
     return;
   }
 
@@ -68,7 +68,7 @@
     function _namespace(eventName) {
       var namespace = null;
       eventName = eventName.split('.');
-      if(eventName.length > 1) {
+      if (eventName.length > 1) {
         namespace = eventName[0];
         eventName = eventName[1];
       }
@@ -83,7 +83,7 @@
     }
 
     function _checkLock(eventName) {
-      if(_locks[eventName]) {
+      if (_locks[eventName]) {
         console.error('EventsManager: Event "' + eventName + '" is locked for use');
       }
     }
@@ -94,7 +94,7 @@
       var names = [],
           name = null;
 
-      for(name in _events) {
+      for (name in _events) {
         names.push(name);
       }
 
@@ -108,7 +108,7 @@
     this.fire = function(eventName, eventArgs) {
       var values = [];
 
-      if(typeof _events[eventName] != 'undefined') {
+      if (typeof _events[eventName] != 'undefined') {
 
         _checkLock(eventName);
 
@@ -116,12 +116,12 @@
 
         _priority.sortByPriority(_events[eventName]);
 
-        for(var i = 0, len = _events[eventName].length; i < len; i++) {
+        for (var i = 0, len = _events[eventName].length; i < len; i++) {
           var evt = _events[eventName][i] || false;
 
-          if(evt) {
+          if (evt) {
             values.push(evt.func.call(eventInstance, eventArgs));
-            if(eventInstance.isStoppedPropagation()) {
+            if (eventInstance.isStoppedPropagation()) {
               eventInstance.resetStopPropagation();
               break;
             }
@@ -131,14 +131,14 @@
         delete _locks[eventName];
       }
 
-      if(_eventsAnything.length) {
+      if (_eventsAnything.length) {
         _priority.sortByPriority(_eventsAnything);
 
-        for(var i = 0, len = _eventsAnything.length; i < len; i++) {
+        for (var i = 0, len = _eventsAnything.length; i < len; i++) {
           var evt = _eventsAnything[i];
 
           values.push(evt.func.call(eventInstance, eventName, eventArgs));
-          if(eventInstance.isStoppedPropagation()) {
+          if (eventInstance.isStoppedPropagation()) {
             eventInstance.resetStopPropagation();
             break;
           }
@@ -187,17 +187,17 @@
     this.removeEventsNamespace = function(namespace) {
       var name;
 
-      for(name in _events) {
+      for (name in _events) {
         var event = _events[name],
             newEvent = [];
 
-        for(var i = event.length - 1; i >= 0; i--) {
-          if(event[i].namespace !== namespace) {
+        for (var i = event.length - 1; i >= 0; i--) {
+          if (event[i].namespace !== namespace) {
             newEvent.push(event[i]);
           }
         }
 
-        if(newEvent.length !== event.length) {
+        if (newEvent.length !== event.length) {
           _checkLock(name);
           _events[name] = newEvent;
         }
@@ -205,13 +205,13 @@
 
       var newEventsAnything = [];
 
-      for(var i = _eventsAnything.length - 1; i >= 0; i--) {
-        if(_eventsAnything[i].namespace !== namespace) {
+      for (var i = _eventsAnything.length - 1; i >= 0; i--) {
+        if (_eventsAnything[i].namespace !== namespace) {
           newEventsAnything.push(_eventsAnything[i]);
         }
       }
 
-      if(newEventsAnything.length !== _eventsAnything.length) {
+      if (newEventsAnything.length !== _eventsAnything.length) {
         _eventsAnything = newEventsAnything;
       }
 
@@ -224,25 +224,25 @@
       _formatEventNames(eventName).map(function(name) {
         name = _namespace(name);
 
-        if(typeof _events[name.name] != 'undefined') {
-          for(var i = 0, len = _events[name.name].length; i < len; i++) {
-            if(name.namespace && _events[name.name][i].namespace != name.namespace) {
+        if (typeof _events[name.name] != 'undefined') {
+          for (var i = 0, len = _events[name.name].length; i < len; i++) {
+            if (name.namespace && _events[name.name][i].namespace != name.namespace) {
               continue;
             }
 
-            if(_events[name.name][i].func.toString() == eventFunc.toString()) {
+            if (_events[name.name][i].func.toString() == eventFunc.toString()) {
               _events[name.name].splice(i, 1);
               break;
             }
           }
         }
 
-        for(var i = 0, len = _eventsAnything.length; i < len; i++) {
-          if(name.namespace && _eventsAnything[i].namespace != name.namespace) {
+        for (var i = 0, len = _eventsAnything.length; i < len; i++) {
+          if (name.namespace && _eventsAnything[i].namespace != name.namespace) {
             continue;
           }
 
-          if(_eventsAnything[i].func.toString() == eventFunc.toString()) {
+          if (_eventsAnything[i].func.toString() == eventFunc.toString()) {
             _eventsAnything.splice(i, 1);
             break;
           }
