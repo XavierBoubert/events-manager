@@ -116,7 +116,7 @@
       i = i || 0;
       results = results || [];
 
-      if (i === events.length) {
+      if (i >= events.length) {
         if (callback) {
           callback(results);
         }
