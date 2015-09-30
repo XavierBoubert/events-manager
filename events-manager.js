@@ -93,7 +93,7 @@
 
     function _checkLock(eventName) {
       if (_locks[eventName]) {
-        console.error('EventsManager: Event "' + eventName + '" is locked for use');
+        console.warn('EventsManager: Be careful, event "' + eventName + '" is locked for use');
       }
     }
 
