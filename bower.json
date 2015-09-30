@@ -1,6 +1,6 @@
 {
   "name": "events-manager",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "JavaScript class inherit to add an events management",
   "homepage": "https://github.com/XavierBoubert/events-manager",
   "authors": [

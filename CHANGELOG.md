@@ -11,11 +11,20 @@ Versions details history. For each version you can find:
 Changelog
 ---------
 
+<a name="1.1.1"></a>
+# 1.1.1 (2015-09-30)
+
+[Release 1.1.1](https://github.com/XavierBoubert/events-manager/releases/tag/1.1.1)
+
+## Hotfixes
+
+- **Core**
+  - Use warning instead of error for lock checking
+
 <a name="1.1.0"></a>
 # 1.1.0 (2015-09-29)
 
-[Release 1.1.0](https://github.com/XavierBoubert/events-manager/releases/tag/1.1.0) -
-[Branch release/1.1.0](https://github.com/XavierBoubert/events-manager/tree/1.1.0)
+[Release 1.1.0](https://github.com/XavierBoubert/events-manager/releases/tag/1.1.0)
 
 ## Breaking changes
 
@@ -30,8 +39,7 @@ Changelog
 <a name="1.0.4"></a>
 # 1.0.4 (2015-03-04)
 
-[Release 1.0.4](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.4) -
-[Branch release/1.0.4](https://github.com/XavierBoubert/events-manager/tree/1.0.4)
+[Release 1.0.4](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.4)
 
 ## Breaking changes
 
@@ -41,8 +49,7 @@ Changelog
 <a name="1.0.3"></a>
 # 1.0.3 (2015-03-04)
 
-[Release 1.0.3](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.3) -
-[Branch release/1.0.3](https://github.com/XavierBoubert/events-manager/tree/1.0.3)
+[Release 1.0.3](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.3)
 
 ## Breaking changes
 
@@ -52,8 +59,7 @@ Changelog
 <a name="1.0.2"></a>
 # 1.0.2 (2015-03-04)
 
-[Release 1.0.2](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.2) -
-[Branch release/1.0.1](https://github.com/XavierBoubert/events-manager/tree/1.0.2)
+[Release 1.0.2](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.2)
 
 ## Breaking changes
 
@@ -63,8 +69,7 @@ Changelog
 <a name="1.0.1"></a>
 # 1.0.1 (2015-03-01)
 
-[Release 1.0.1](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.1) -
-[Branch release/1.0.1](https://github.com/XavierBoubert/events-manager/tree/1.0.1)
+[Release 1.0.1](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.1)
 
 ## Breaking changes
 
@@ -74,8 +79,7 @@ Changelog
 <a name="1.0.0"></a>
 # 1.0.0 (2014-08-21)
 
-[Release 1.0.0](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.0) -
-[Branch release/1.0.0](https://github.com/XavierBoubert/events-manager/tree/1.0.0)
+[Release 1.0.0](https://github.com/XavierBoubert/events-manager/releases/tag/1.0.0)
 
 ## Breaking changes
 
