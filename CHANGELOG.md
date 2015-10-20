@@ -11,6 +11,16 @@ Versions details history. For each version you can find:
 Changelog
 ---------
 
+<a name="1.1.2"></a>
+# 1.1.2 (2015-10-20)
+
+[Release 1.1.2](https://github.com/XavierBoubert/events-manager/releases/tag/1.1.2)
+
+## Hotfixes
+
+- **Core**
+  - Fire callback when no event registered
+
 <a name="1.1.1"></a>
 # 1.1.1 (2015-09-30)
 
