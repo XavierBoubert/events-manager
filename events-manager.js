@@ -157,8 +157,18 @@
       _fireLoop(eventName, eventArgs, events, callback, i + 1, results);
     }
 
+    function _fireCallback(dones, callback, results) {
+      if (dones == 2) {
+        if (callback) {
+          callback(results);
+        }
+      }
+    }
+
     this.fire = function(eventName, eventArgs, callback) {
-      var values = [];
+      var values = [],
+          dones = 0,
+          results = [];
 
       if (typeof _events[eventName] != 'undefined') {
 
@@ -166,22 +176,30 @@
 
         _locks[eventName] = true;
 
-        _fireLoop(eventName, eventArgs, _events[eventName], function(results) {
-          if (callback) {
-            callback(results);
-          }
+        _fireLoop(eventName, eventArgs, _events[eventName], function(newResults) {
+          results = results.concat(newResults);
+          dones++;
+          _fireCallback(dones, callback, results);
         });
 
         delete _locks[eventName];
       }
+      else {
+        dones++;
+      }
 
       if (_eventsAnything.length) {
-        _fireLoop(eventName, eventArgs, _eventsAnything, function(results) {
-          if (callback) {
-            callback(results);
-          }
+        _fireLoop(eventName, eventArgs, _eventsAnything, function(newResults) {
+          results = results.concat(newResults);
+          dones++;
+          _fireCallback(dones, callback, results);
         });
       }
+      else {
+        dones++;
+      }
+
+      _fireCallback(dones, callback, results);
 
       return values;
     };
