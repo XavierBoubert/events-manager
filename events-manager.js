@@ -166,12 +166,10 @@
     }
 
     this.fire = function(eventName, eventArgs, callback) {
-      var values = [],
-          dones = 0,
+      var dones = 0,
           results = [];
 
       if (typeof _events[eventName] != 'undefined') {
-
         _checkLock(eventName);
 
         _locks[eventName] = true;
@@ -201,7 +199,7 @@
 
       _fireCallback(dones, callback, results);
 
-      return values;
+      return results;
     };
 
     function _on(eventName, eventFunc, priority, async) {
